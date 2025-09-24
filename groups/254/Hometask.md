@@ -49,6 +49,8 @@
 |---------------|---------|
 | [Ввод, вывод, проверка](https://official.contest.yandex.ru/contest/80896/enter) | 03.09.25 – 10.09.25 |
 | [Арифметические и битовые операции](https://official.contest.yandex.ru/contest/81188/enter) | 10.09.25 – 17.09.25 |
+| [Условный оператор](https://official.contest.yandex.ru/contest/68255/enter) | 17.09.25 – 24.09.25 |
+| [Циклы и массивы](https://official.contest.yandex.ru/contest/82015/enter) | 24.09.25 – 04.10.25 |
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
 
