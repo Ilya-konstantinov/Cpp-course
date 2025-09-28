@@ -38,7 +38,7 @@
 | Тема + ссылка | Дедлайн |
 |---------------|---------|
 | [Сортировки, ссылки, указатели, динамическая память](https://official.contest.yandex.ru/contest/81096/enter) | 05.09.25 – 21.09.25 |
-| [Alignment, структуры](https://official.contest.yandex.ru/contest/81716/enter) | 29.09.25 |
+| [Alignment, структуры](https://official.contest.yandex.ru/contest/81716/enter) | 06.10.25 |
 
 ## [Теордз](https://official.contest.yandex.ru/contest/81425/enter)
 
