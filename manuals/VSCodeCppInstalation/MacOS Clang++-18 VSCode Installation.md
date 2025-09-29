@@ -8,8 +8,9 @@ brew link llvm@18 --force
 
 ## Настройка VSCode
 #### 1. Установите эти расширение в VSCode
-![[Pasted image 20250927143516.png]]
-![[Pasted image 20250927152024.png]]
+
+![[.img/c_c++_extension.png]]
+![[.img/codelldb.png]]
 
 #### 2. Создайте папку .vscode в вашей рабочей директории
 #### 3. Создайте в этой папке tasks.json и вставьте конфиг снизу
