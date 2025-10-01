@@ -2,13 +2,16 @@
 
 ## Описание директорий
 - [Introduction](/.)
-- [Работа с ЯКонтестом](/YContest.md)
-- [Общий мануал курсов](/manual.md)
-- [Группы](/groups/)
-  - [241](/groups/241)
-  - [244](/groups/244)
-  - [253](/groups/253)
-  - [254](/groups/254)
+- [Олимпиадки](./olympiads/)
+- [Мануалы](./manuals/)
+   - [Работа с ЯКонтестом](./manuals/YContest.md)
+   - [Общий мануал курсов](./manuals/manual.md)
+   - [Установка VSCode + C++](./manuals/VSCodeCppInstalation/)
+- [Группы](./groups/)
+  - [241](./groups/241/README.md)
+  - [244](./groups/244/README.md)
+  - [253](./groups/253/README.md)
+  - [254](./groups/254/README.md)
 
 Каждому потоку соответствует своя папка, например группе угл7 2023 года поступления будет соответствовать папка 237.
 
