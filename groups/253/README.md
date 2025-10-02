@@ -41,7 +41,8 @@
 |---------------|---------|
 | [Ввод, вывод](https://official.contest.yandex.ru/contest/67546/enter) | 05.09.25 – 12.09.25 |
 | [Арифметические операции](https://official.contest.yandex.ru/contest/67904/enter) | 12.09.25 – 19.09.25 |
-| [Циклы](https://official.contest.yandex.ru/contest/68656/enter) | 19.09.25 – 26.10.25 |
+| [Условия](https://official.contest.yandex.ru/contest/68255/enter) | 19.09.25 – 26.09.25 |
+| [Циклы](https://official.contest.yandex.ru/contest/68656/enter) | 26.09.25 – 03.10.25 |
 
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
