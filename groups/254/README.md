@@ -53,7 +53,7 @@
 | [Циклы и массивы](https://official.contest.yandex.ru/contest/82015/enter) | 24.09.25 – 04.10.25 |
 | [Строки и функции pt1](https://official.contest.yandex.ru/contest/82494/enter/) | 01.10.25 – 08.10.25 |
 | [Строки и функции pt2](https://official.contest.yandex.ru/contest/82495/enter/) | 01.10.25 – 15.10.25 |
-| [](https://official.contest.yandex.ru/contest/72446/enter) | 08.10.25 – 15.10.25 |
+| [Х](https://official.contest.yandex.ru/contest/72446/enter) | 08.10.25 – 15.10.25 |
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
 
