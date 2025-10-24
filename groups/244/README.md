@@ -39,7 +39,7 @@
 |---------------|---------|
 | [Сортировки, ссылки, указатели, динамическая память](https://official.contest.yandex.ru/contest/81096/enter) | 05.09.25 – 21.09.25 |
 | [Alignment, структуры](https://official.contest.yandex.ru/contest/81716/enter) | 03.10.25 |
-| [Классы, перегрузка](https://contest.yandex.ru/contest/82619/enter) | 05.10.25 - 26.10.26 |
+| [Классы, перегрузка](https://contest.yandex.ru/contest/82619/enter) | 05.10.25 - 9.11.25 |
 
 ## [Теордз](https://official.contest.yandex.ru/contest/81425/enter)
 
