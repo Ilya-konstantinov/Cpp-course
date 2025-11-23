@@ -55,6 +55,7 @@
 | [Строки и функции pt2](https://official.contest.yandex.ru/contest/82495/enter/) | 01.10.25 – 15.10.25 |
 | [Ссылки, указатели](https://official.contest.yandex.ru/contest/72446/enter) | 08.10.25 – 15.10.25 |
 | [Contest](https://official.contest.yandex.ru/contest/84821/enter) | 06.11.25 – 16.11.25 |
+| [Потоки ввода-вывода](https://official.contest.yandex.ru/contest/85842/enter) | 21.11.25 – 28.11.25 |
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
 
