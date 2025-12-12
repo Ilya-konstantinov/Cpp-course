@@ -46,6 +46,7 @@
 | [Массивы](https://contest.yandex.ru/contest/69081/enter) | 03.10.25 – 10.10.25 |
 | [Строки](https://official.contest.yandex.ru/contest/69359/enter) | 10.10.25 – 17.10.25 |
 | [Ссылки, указатели](https://official.contest.yandex.ru/contest/86604/enter) | 5.12.25 – 12.12.25 |
+| [STL алгоритмы](https://official.contest.yandex.ru/contest/87089/enter) | 12.12.25 – 19.12.25 |
 
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
