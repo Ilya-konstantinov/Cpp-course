@@ -57,6 +57,7 @@
 | [Contest](https://official.contest.yandex.ru/contest/84821/enter) | 06.11.25 – 16.11.25 |
 | [Потоки ввода-вывода](https://official.contest.yandex.ru/contest/85842/enter) | 21.11.25 – 28.11.25 |
 | [Связанный список](https://official.contest.yandex.ru/contest/86591/enter) | 5.12.25 – 12.12.25 |
+| [Стек, дек, очередь](contest.yandex.ru/contest/86969/enter) | 10.12.25 – 17.12.25 |
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
 
