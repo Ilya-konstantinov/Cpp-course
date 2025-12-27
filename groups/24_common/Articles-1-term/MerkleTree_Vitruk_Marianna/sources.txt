@@ -1,0 +1,6 @@
+источники:
+   - https://ru.wikipedia.org/wiki/Хеш-функция
+   - https://ru.wikipedia.org/wiki/SHA-2
+   - https://pythonworld.ru/
+   - https://ru.wikipedia.org/wiki/Временная_сложность_алгоритма
+   - https://docs.python.org/3/library/hashlib.html (англ. с переводом)
