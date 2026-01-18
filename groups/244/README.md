@@ -43,6 +43,7 @@
 | [Графы. Начало](https://official.contest.yandex.ru/contest/85565/enter) | 17.11.25 - 24.11.25 |
 | [dfs, bfs](https://official.contest.yandex.ru/contest/86341/enter) | 01.12.25 - 11.12.25 |
 | [Топологическая сортировка, мосты и точки сочленения, компоненты сильной связности](https://official.contest.yandex.ru/contest/86341/enter) | 10.12.25 - 20.12.25 |
+| [Численные методы](https://official.contest.yandex.ru/contest/88823/enter) | 18.01.25 - 28.01.25 |
 
 ## [Теордз](https://official.contest.yandex.ru/contest/81425/enter)
 
