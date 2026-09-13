@@ -37,8 +37,8 @@
 
 | Тема + ссылка | Дедлайн |
 |---------------|---------|
-| [Квадратичняе сортировки](https://contest.yandex.ru/contest/98599/enter) | 22.09.2026 |
-| [n log сортировки](https://contest.yandex.ru/contest/99315/enter) | 29.09.2026 |
+| [Квадратичняе сортировки](https://official.contest.yandex.ru/contest/98599/enter) | 22.09.2026 |
+| [n log сортировки](https://official.contest.yandex.ru/contest/99315/enter) | 29.09.2026 |
 
 **Время дедлайна каждый раз: 10:30 (начало и конец)**
 
