@@ -39,8 +39,10 @@
 |---------------|---------|
 | [Квадратичняе сортировки](https://official.contest.yandex.ru/contest/98599/enter) | 22.09.2026 |
 | [n log сортировки](https://official.contest.yandex.ru/contest/99315/enter) | 29.09.2026 |
+| [Большие числа и классы](https://official.contest.yandex.ru/contest/100804/enter) | 11.10.2026 |
+| [Подготовка к КР](https://official.contest.yandex.ru/contest/100839/enter) |  |
 
-**Время дедлайна каждый раз: 10:30 (начало и конец)**
+**Время дедлайна каждый раз: 4:00 воскресенья**
 
 ---
 
