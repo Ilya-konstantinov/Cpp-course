@@ -6,6 +6,57 @@
 #include <type_traits>
 #include <utility>
 
+/*
+Сигнатуры основных методов
+
+Перечислен публичный интерфейс классов, которые вы реализуете в своём файле.
+
+BatteryCell:
+    explicit BatteryCell(int capacity = 100, int charge = 0);
+    int GetCapacity() const;
+    int GetCharge() const;
+    int GetFreeSpace() const;
+    bool TryCharge(int amount);
+    bool TryConsume(int amount);
+    BatteryCell& operator+=(int amount);
+    BatteryCell& operator-=(int amount);
+    bool operator==(const BatteryCell& other) const;
+    bool operator!=(const BatteryCell& other) const;
+
+BatteryPack:
+    explicit BatteryPack(int cell_capacity = 100, int charge = 0);
+    int GetCapacity() const;
+    int GetCharge() const;
+    int GetFreeSpace() const;
+    const BatteryCell& operator[](std::size_t index) const;
+    bool TryCharge(int amount);
+    bool TryConsume(int amount);
+    BatteryPack& operator+=(int amount);
+    BatteryPack& operator-=(int amount);
+    BatteryPack operator+(int amount) const;
+    BatteryPack operator-(int amount) const;
+
+Motor:
+    explicit Motor(int cost = 1);
+    int GetCost() const;
+    bool IsRunning() const;
+    void Start();
+    void Stop();
+
+Robot:
+    explicit Robot(const BatteryPack& battery = BatteryPack(), int cost = 1);
+    long long GetPosition() const;
+    const BatteryPack& GetBattery() const;
+    const Motor& GetMotor() const;
+    bool TryStart();
+    void Stop();
+    bool TryCharge(int amount);
+    bool TryMove(int steps);
+    Robot& operator++();
+    Robot operator++(int);
+    explicit operator bool() const;
+*/
+
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
 void ShowRobot(const Robot& robot) {

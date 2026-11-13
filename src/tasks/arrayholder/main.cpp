@@ -37,6 +37,24 @@ inline int* MakeArray(std::size_t size) { return new int[size](); }
 inline int* (*volatile allocation_function)(std::size_t) = MakeArray;
 inline int* NewArray(std::size_t size) { return allocation_function(size); }
 }
+/*
+Сигнатуры основных методов
+
+Перечислен публичный интерфейс классов, которые вы реализуете в своём файле.
+
+ArrayHolder:
+    explicit ArrayHolder(int* data = nullptr);
+    ~ArrayHolder();
+    ArrayHolder(const ArrayHolder&) = delete;
+    ArrayHolder& operator=(const ArrayHolder&) = delete;
+    int* Get() const;
+    int& operator[](std::size_t index) const;
+    explicit operator bool() const;
+    int* Release();
+    void Reset(int* data = nullptr);
+    void Swap(ArrayHolder& other);
+*/
+
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
 int main() {

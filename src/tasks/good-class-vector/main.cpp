@@ -9,6 +9,67 @@
 #include <type_traits>
 #include <utility>
 
+/*
+Сигнатуры основных методов
+
+Перечислен публичный интерфейс классов, которые вы реализуете в своём файле.
+Копирующее присваивание MyVector может принимать аргумент по значению.
+Имена iterator, const_iterator и Slice обозначают выбранные вами типы итераторов и среза.
+
+ArrayHolder:
+    explicit ArrayHolder(int* data = nullptr);
+    ~ArrayHolder();
+    ArrayHolder(const ArrayHolder&) = delete;
+    ArrayHolder& operator=(const ArrayHolder&) = delete;
+    int* Get() const;
+    int& operator[](std::size_t index) const;
+    explicit operator bool() const;
+    int* Release();
+    void Reset(int* data = nullptr);
+    void Swap(ArrayHolder& other);
+
+MyVector:
+    MyVector();
+    explicit MyVector(std::size_t size);
+    MyVector(std::size_t size, std::int32_t value);
+    MyVector(const MyVector& other);
+    ~MyVector();
+    MyVector& operator=(const MyVector& other);
+    std::size_t Size() const;
+    std::size_t Capacity() const;
+    void PushBack(std::int32_t value);
+    std::int32_t PopBack();
+    void Resize(std::size_t size);
+    void Reserve(std::size_t capacity);
+    void Clear();
+    long long Sum() const;
+    long double Mean() const;
+    std::int32_t Min() const;
+    std::int32_t Max() const;
+    std::int32_t& operator[](std::ptrdiff_t index);
+    const std::int32_t& operator[](std::ptrdiff_t index) const;
+    MyVector& operator^=(const MyVector& other);
+    iterator Begin();
+    iterator End();
+    const_iterator Begin() const;
+    const_iterator End() const;
+    iterator begin();
+    iterator end();
+    const_iterator begin() const;
+    const_iterator end() const;
+    void Insert(std::int32_t value, iterator position);
+    void Erase(iterator position);
+    Slice operator()(std::ptrdiff_t left, std::ptrdiff_t right);
+std::istream& operator>>(std::istream& in, MyVector& value);
+std::ostream& operator<<(std::ostream& out, const MyVector& value);
+
+Slice (срез):
+    iterator Begin() const;
+    iterator End() const;
+    iterator begin() const;
+    iterator end() const;
+*/
+
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
 void Info(const MyVector& values) {

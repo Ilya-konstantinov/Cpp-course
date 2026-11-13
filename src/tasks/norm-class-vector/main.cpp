@@ -9,6 +9,51 @@
 #include <type_traits>
 #include <utility>
 
+/*
+Сигнатуры основных методов
+
+Перечислен публичный интерфейс классов, которые вы реализуете в своём файле.
+Копирующее присваивание MyVector может принимать аргумент по значению.
+
+ArrayHolder:
+    explicit ArrayHolder(int* data = nullptr);
+    ~ArrayHolder();
+    ArrayHolder(const ArrayHolder&) = delete;
+    ArrayHolder& operator=(const ArrayHolder&) = delete;
+    int* Get() const;
+    int& operator[](std::size_t index) const;
+    explicit operator bool() const;
+    int* Release();
+    void Reset(int* data = nullptr);
+    void Swap(ArrayHolder& other);
+
+MyVector:
+    MyVector();
+    explicit MyVector(std::size_t size);
+    MyVector(std::size_t size, std::int32_t value);
+    MyVector(const MyVector& other);
+    ~MyVector();
+    MyVector& operator=(const MyVector& other);
+    std::size_t Size() const;
+    std::size_t Capacity() const;
+    void PushBack(std::int32_t value);
+    std::int32_t PopBack();
+    void Resize(std::size_t size);
+    void Reserve(std::size_t capacity);
+    void Clear();
+    long long Sum() const;
+    long double Mean() const;
+    std::int32_t Min() const;
+    std::int32_t Max() const;
+    std::int32_t& operator[](std::ptrdiff_t index);
+    const std::int32_t& operator[](std::ptrdiff_t index) const;
+    MyVector& operator^=(const MyVector& other);
+    void Insert(std::int32_t value, std::size_t index);
+    void Erase(std::size_t index);
+std::istream& operator>>(std::istream& in, MyVector& value);
+std::ostream& operator<<(std::ostream& out, const MyVector& value);
+*/
+
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
 void Info(const MyVector& values) {

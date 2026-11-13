@@ -7,6 +7,74 @@
 #include <type_traits>
 #include <utility>
 
+/*
+Сигнатуры основных методов
+
+Перечислен публичный интерфейс классов, которые вы реализуете в своём файле.
+
+BatteryCell:
+    explicit BatteryCell(int capacity = 100, int charge = 0);
+    int GetCapacity() const;
+    int GetCharge() const;
+    int GetFreeSpace() const;
+    bool TryCharge(int amount);
+    bool TryConsume(int amount);
+    BatteryCell& operator+=(int amount);
+    BatteryCell& operator-=(int amount);
+    bool operator==(const BatteryCell& other) const;
+    bool operator!=(const BatteryCell& other) const;
+    friend std::ostream& operator<<(std::ostream&, const BatteryCell&);
+    friend std::istream& operator>>(std::istream&, BatteryCell&);
+
+BatteryPack:
+    explicit BatteryPack(int cell_capacity = 100, int charge = 0);
+    int GetCapacity() const;
+    int GetCharge() const;
+    int GetFreeSpace() const;
+    const BatteryCell& operator[](std::size_t index) const;
+    bool TryCharge(int amount);
+    bool TryConsume(int amount);
+    BatteryPack& operator+=(int amount);
+    BatteryPack& operator-=(int amount);
+    BatteryPack operator+(int amount) const;
+    BatteryPack operator-(int amount) const;
+    friend std::ostream& operator<<(std::ostream&, const BatteryPack&);
+    friend std::istream& operator>>(std::istream&, BatteryPack&);
+
+Motor:
+    explicit Motor(int cost = 1);
+    int GetCost() const;
+    bool IsRunning() const;
+    void Start();
+    void Stop();
+    friend std::ostream& operator<<(std::ostream&, const Motor&);
+    friend std::istream& operator>>(std::istream&, Motor&);
+
+Robot:
+    explicit Robot(const BatteryPack& battery = BatteryPack(), int cost = 1);
+    long long GetPosition() const;
+    const BatteryPack& GetBattery() const;
+    const Motor& GetMotor() const;
+    bool TryStart();
+    void Stop();
+    bool TryCharge(int amount);
+    bool TryMove(int steps);
+    Robot& operator++();
+    Robot operator++(int);
+    explicit operator bool() const;
+    friend std::ostream& operator<<(std::ostream&, const Robot&);
+    friend std::istream& operator>>(std::istream&, Robot&);
+
+std::ostream& operator<<(std::ostream& out, const BatteryCell& cell);
+std::istream& operator>>(std::istream& in, BatteryCell& cell);
+std::ostream& operator<<(std::ostream& out, const BatteryPack& pack);
+std::istream& operator>>(std::istream& in, BatteryPack& pack);
+std::ostream& operator<<(std::ostream& out, const Motor& motor);
+std::istream& operator>>(std::istream& in, Motor& motor);
+std::ostream& operator<<(std::ostream& out, const Robot& robot);
+std::istream& operator>>(std::istream& in, Robot& robot);
+*/
+
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
 void ShowRobot(const Robot& robot) {

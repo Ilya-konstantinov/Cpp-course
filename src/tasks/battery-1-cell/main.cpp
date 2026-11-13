@@ -3,6 +3,24 @@
 #include <string>
 #include <type_traits>
 
+/*
+Сигнатуры основных методов
+
+Перечислен публичный интерфейс классов, которые вы реализуете в своём файле.
+
+BatteryCell:
+    explicit BatteryCell(int capacity = 100, int charge = 0);
+    int GetCapacity() const;
+    int GetCharge() const;
+    int GetFreeSpace() const;
+    bool TryCharge(int amount);
+    bool TryConsume(int amount);
+    BatteryCell& operator+=(int amount);
+    BatteryCell& operator-=(int amount);
+    bool operator==(const BatteryCell& other) const;
+    bool operator!=(const BatteryCell& other) const;
+*/
+
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
 int main() {
