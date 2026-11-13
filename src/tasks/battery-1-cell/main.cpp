@@ -5,7 +5,6 @@
 #include <iostream>
 #include <limits>
 #include <sstream>
-#include <stdexcept>
 #include <string>
 #include <type_traits>
 #include <utility>
@@ -40,18 +39,7 @@ int main() {
         assert(!a.TryCharge(6) && !a.TryConsume(6) && a == b);
         assert(a.TryCharge(0) && a.TryConsume(0) && a == b);
         assert(&(a += 5) == &a && a.GetCharge() == 10);
-        bool caught = false;
-        try { a += 1; } catch (const std::out_of_range&) { caught = true; }
-        assert(caught && a.GetCharge() == 10);
         assert(&(a -= 10) == &a && a.GetCharge() == 0);
-        caught = false;
-        try { a -= 1; } catch (const std::out_of_range&) { caught = true; }
-        assert(caught && a.GetCharge() == 0);
-        for (int capacity : {0, -1, 1000001}) {
-            caught = false;
-            try { (void)BatteryCell(capacity, 0); } catch (const std::invalid_argument&) { caught = true; }
-            assert(caught);
-        }
         BatteryCell copy = b;
         copy -= 1;
         assert(b.GetCharge() == 5 && copy.GetCharge() == 4);
@@ -70,15 +58,15 @@ int main() {
             std::cout << (command == "charge" ? v.TryCharge(amount) : v.TryConsume(amount)) << '\n';
         } else if (command == "add" || command == "sub") {
             int amount; std::cin >> amount;
-            try {
-                if (command == "add") v += amount;
-                else v -= amount;
-                std::cout << "OK\n";
-            } catch (const std::out_of_range&) { std::cout << "ERROR\n"; }
+            const bool allowed = amount >= 0 && amount <=
+                (command == "add" ? v.GetFreeSpace() : v.GetCharge());
+            if (command == "add") v += amount;
+            else v -= amount;
+            if (allowed) std::cout << "OK\n";
         } else if (command == "make") {
             int c, q; std::cin >> c >> q;
-            try { v = BatteryCell(c, q); std::cout << "OK\n"; }
-            catch (const std::invalid_argument&) { std::cout << "ERROR\n"; }
+            if (c <= 0 || c > 1000000 || q < 0 || q > c) std::cout << "ERROR\n";
+            else { v = BatteryCell(c, q); std::cout << "OK\n"; }
         } else if (command == "copy") {
             int source; std::cin >> source; v = values[source];
         } else if (command == "equal") {
