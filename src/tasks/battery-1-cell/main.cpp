@@ -1,14 +1,7 @@
-#include <algorithm>
 #include <cassert>
-#include <cstddef>
-#include <cstdint>
 #include <iostream>
-#include <limits>
-#include <sstream>
 #include <string>
 #include <type_traits>
-#include <utility>
-#include <vector>
 
 // Здесь система проверки вставит ваш код. Функцию main писать не нужно.
 
