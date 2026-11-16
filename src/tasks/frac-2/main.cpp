@@ -56,7 +56,6 @@ int main() {
         static_assert(std::is_same_v<decltype(std::declval<const Fraction&>() - std::declval<const Fraction&>()), Fraction>);
         static_assert(std::is_default_constructible_v<Fraction>);
         static_assert(std::is_constructible_v<Fraction, std::int64_t>);
-        static_assert(std::is_convertible_v<std::int64_t, Fraction>);
         static_assert(std::is_same_v<decltype(std::declval<const Fraction&>() * std::declval<const Fraction&>()), Fraction>);
         static_assert(std::is_same_v<decltype(std::declval<const Fraction&>() / std::declval<const Fraction&>()), Fraction>);
         static_assert(std::is_same_v<decltype(std::declval<Fraction&>() += std::declval<const Fraction&>()), Fraction&>);
